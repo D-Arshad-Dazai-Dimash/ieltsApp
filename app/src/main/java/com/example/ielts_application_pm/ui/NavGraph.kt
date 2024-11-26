@@ -5,14 +5,20 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.example.ielts_application_pm.ui.screens.TaskDetailScreen
 import com.example.ielts_application_pm.ui.screens.TaskListScreen
 
 @Composable
 fun NavigationGraph(navController: NavHostController, modifier: Modifier = Modifier) {
     NavHost(navController, startDestination = "listening") {
-        composable("listening") { TaskListScreen("Listening", modifier) }
-        composable("writing") { TaskListScreen("Writing", modifier) }
-        composable("reading") { TaskListScreen("Reading", modifier) }
-        composable("speaking") { TaskListScreen("Speaking", modifier) }
+        composable("listening") { TaskListScreen("Listening", navController,  modifier) }
+        composable("writing") { TaskListScreen("Writing", navController , modifier) }
+        composable("reading") { TaskListScreen("Reading",navController ,  modifier) }
+        composable("speaking") { TaskListScreen("Speaking",  navController, modifier) }
+
+        composable("taskDetail/{taskTitle}") { backStackEntry ->
+            val taskTitle = backStackEntry.arguments?.getString("taskTitle") ?: ""
+            TaskDetailScreen(taskTitle)
+        }
     }
 }

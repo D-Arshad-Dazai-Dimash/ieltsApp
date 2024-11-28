@@ -1,11 +1,11 @@
 package com.example.ielts_application_pm.ui
 
+import TaskDetailScreen
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.example.ielts_application_pm.ui.screens.TaskDetailScreen
 import com.example.ielts_application_pm.ui.screens.TaskListScreen
 
 @Composable
@@ -18,7 +18,7 @@ fun NavigationGraph(navController: NavHostController, modifier: Modifier = Modif
 
         composable("taskDetail/{taskTitle}") { backStackEntry ->
             val taskTitle = backStackEntry.arguments?.getString("taskTitle") ?: ""
-            TaskDetailScreen(taskTitle)
+            TaskDetailScreen(taskTitle , navController)
         }
     }
 }

@@ -1,12 +1,17 @@
 package com.example.ielts_application_pm.ui.screens
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.input.pointer.motionEventSpy
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -70,7 +75,7 @@ fun TaskListScreen(title: String, navController: NavHostController, modifier: Mo
             "GAME" to "Description of Reading game",
 
 
-        )
+            )
 
         "Speaking" -> listOf(
             "The Game" to "Description of Speaking game",
@@ -94,19 +99,27 @@ fun TaskListScreen(title: String, navController: NavHostController, modifier: Mo
         else -> emptyList()
     }
 
-    Box(modifier = Modifier.fillMaxSize()) {
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(color = Color(0xFF212121))
+    ) {
         LazyColumn(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(top = 56.dp)
+                .background(color = Color(0xFF212121)),
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
             item {
-                Text(
-                    text = "$title Tasks",
-                    fontSize = 24.sp,
-                    fontWeight = FontWeight.Bold,
-                    modifier = Modifier.padding(16.dp)
-                )
+//                Text(
+//                    text = "$title Tasks",
+//                    fontSize = 24.sp,
+//                    fontWeight = FontWeight.Bold,
+//                    modifier = Modifier.padding(8.dp),
+//                    color = Color.White
+//                )
+                Spacer(modifier = Modifier.padding(30.dp))
             }
 
             items(tasks.size) { index ->

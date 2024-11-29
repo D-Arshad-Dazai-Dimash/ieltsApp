@@ -59,7 +59,7 @@ fun LanguageApp() {
         Box(
             modifier = Modifier
                 .fillMaxSize()
-                .background(color = Color(0xFF212121)),
+                .background(color = Color(0xFF79B473)),
         ) {
             val currentRoute = currentRoute(navController)
 

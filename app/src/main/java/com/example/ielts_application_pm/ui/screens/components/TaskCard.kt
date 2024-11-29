@@ -37,10 +37,10 @@ fun TaskCard(
             .clickable { onClick() },
         elevation = CardDefaults.cardElevation(8.dp),
         colors = CardColors(
-            contentColor = Color(0xFF313131),
-            containerColor = Color(0xFF313131),
-            disabledContentColor = Color(0xFF313131),
-            disabledContainerColor = Color(0xFF313131)
+            contentColor = Color(0xFFF1E3E4),
+            containerColor = Color(0xFFF1E3E4),
+            disabledContentColor = Color(0xFFF1E3E4),
+            disabledContainerColor = Color(0xFFF1E3E4)
             )
     ) {
         Column(
@@ -53,13 +53,13 @@ fun TaskCard(
                 fontSize = 18.sp,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.padding(bottom = 8.dp),
-                color = Color.White
+                color = Color(0xFF1C1D21)
             )
             Text(
                 text = description,
                 fontSize = 14.sp,
                 modifier = Modifier.padding(bottom = 8.dp),
-                color = Color.White
+                color = Color(0xFF1C1D21)
             )
         }
     }

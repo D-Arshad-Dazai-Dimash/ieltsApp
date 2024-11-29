@@ -19,7 +19,7 @@ fun TaskDetailScreen(taskTitle: String, navController: NavController) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFF212121))
+            .background(Color.White)
     ) {
         Row(
             verticalAlignment = Alignment.CenterVertically,
@@ -34,24 +34,25 @@ fun TaskDetailScreen(taskTitle: String, navController: NavController) {
                 }
             }) {
                 Icon(
-                    painter = painterResource(id = R.drawable.ic_launcher_foreground),
+                    painter = painterResource(id = R.drawable.icon_arrow_back),
                     contentDescription = "Back",
-                    tint = Color.White
+                    tint = Color(0xFF040404),
+                    modifier = Modifier.size(15.dp)
                 )
             }
             Text(
-                text = "Task Details",
+                text = taskTitle,
                 fontSize = 24.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color.White
+                color = Color(0xFF040404)
             )
         }
 
-        Text(
-            text = "Title: $taskTitle",
-            fontSize = 18.sp,
-            modifier = Modifier.padding(bottom = 8.dp),
-            color = Color.White
-        )
+//        Text(
+//            text = "Title: $taskTitle",
+//            fontSize = 18.sp,
+//            modifier = Modifier.padding(bottom = 8.dp),
+//            color = Color.White
+//        )
     }
 }

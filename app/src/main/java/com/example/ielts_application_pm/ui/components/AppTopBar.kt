@@ -27,22 +27,22 @@ fun AppTopBar(onMenuClicked: () -> Unit) {
                 modifier = Modifier.fillMaxWidth(),
                 fontWeight = FontWeight.Bold,
                 textAlign = TextAlign.Center,
-                color = Color.White,
+                color = Color(0xFF1C1D21),
                 fontFamily = FontFamily.Monospace,
                 fontSize = 30.sp
             )
         },
         navigationIcon = {
             IconButton(onClick = { onMenuClicked() }) {
-                Icon(Icons.Default.Menu, contentDescription = "Menu", tint = Color.White)
+                Icon(Icons.Default.Menu, contentDescription = "Menu", tint = Color(0xFF1C1D21))
             }
         },
         colors = TopAppBarColors(
-            containerColor = Color(0xFF313131),
-            titleContentColor = Color(0xFF313131),
-            navigationIconContentColor = Color(0xFF313131),
-            scrolledContainerColor = Color(0xFF313131),
-            actionIconContentColor = Color(0xFF313131)
+            containerColor = Color(0xFFF1E3E4),
+            titleContentColor = Color(0xFFF1E3E4),
+            navigationIconContentColor = Color(0xFFF1E3E4),
+            scrolledContainerColor = Color(0xFFF1E3E4),
+            actionIconContentColor = Color(0xFFF1E3E4)
         )
     )
 }

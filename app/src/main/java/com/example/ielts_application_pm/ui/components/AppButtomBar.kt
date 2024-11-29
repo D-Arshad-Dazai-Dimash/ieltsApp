@@ -26,7 +26,7 @@ fun AppBottomNavigation(navController: NavHostController) {
         BottomNavItem("Speaking", "speaking", painterResource(R.drawable.user_speak_svgrepo_com))
     )
 
-    NavigationBar( containerColor = Color(0xFF313131)) {
+    NavigationBar( containerColor = Color(0xFFF1E3E4)) {
         val navBackStackEntry by navController.currentBackStackEntryAsState()
         val currentRoute = navBackStackEntry?.destination?.route
 
@@ -43,13 +43,13 @@ fun AppBottomNavigation(navController: NavHostController) {
                 label = { Text(item.label) },
                 selected = currentRoute == item.route,
                 colors = NavigationBarItemColors(
-                    selectedTextColor = Color.White,
-                    selectedIconColor = Color(0xFF313131),
+                    selectedTextColor = Color(0xFF1C1D21),
+                    selectedIconColor = Color.Black,
                     selectedIndicatorColor = Color.White,
-                    unselectedTextColor = Color.White,
-                    unselectedIconColor = Color.White,
-                    disabledIconColor = Color.White,
-                    disabledTextColor = Color.White
+                    unselectedTextColor = Color(0xFF1C1D21),
+                    unselectedIconColor = Color(0xFF1C1D21),
+                    disabledIconColor = Color(0xFF1C1D21),
+                    disabledTextColor = Color(0xFF1C1D21)
                 ),
                 onClick = {
                     if (currentRoute != item.route) {

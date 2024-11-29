@@ -39,7 +39,7 @@ import com.example.ielts_application_pm.R
 
 @Composable
 fun AppDrawer(onItemSelected: (String) -> Unit) {
-    ModalDrawerSheet(drawerContainerColor = Color(0xFF313131)) {
+    ModalDrawerSheet(drawerContainerColor = Color(0xFFF1E3E4)) {
         Column(
             modifier = Modifier
                 .fillMaxWidth()
@@ -58,7 +58,7 @@ fun AppDrawer(onItemSelected: (String) -> Unit) {
                 text = "nazzy 💖",
                 fontSize = 30.sp,
                 modifier = Modifier.padding(bottom = 4.dp),
-                color = Color.White,
+                color = Color.Black,
                 fontWeight = W700
             )
         }
@@ -121,20 +121,20 @@ fun DrawerMenuItem(icon: ImageVector, text: String, onClick: () -> Unit) {
             .fillMaxWidth()
             .padding(vertical = 8.dp)
             .clickable { onClick() }
-            .background(Color(0xFF313131)),
+            .background(Color(0xFFF1E3E4)),
         verticalAlignment = Alignment.CenterVertically
     ) {
         Icon(
             imageVector = icon,
             contentDescription = text,
             modifier = Modifier.size(24.dp),
-            tint = Color.White
+            tint = Color.Gray
         )
         Spacer(modifier = Modifier.width(16.dp))
         Text(
             text = text,
             fontSize = 20.sp,
-            color = Color.White,
+            color = Color.Black,
             fontWeight = W700
         )
     }

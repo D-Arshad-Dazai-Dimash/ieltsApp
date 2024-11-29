@@ -102,13 +102,13 @@ fun TaskListScreen(title: String, navController: NavHostController, modifier: Mo
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(color = Color(0xFF212121))
+            .background(color = Color.White)
     ) {
         LazyColumn(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(top = 56.dp)
-                .background(color = Color(0xFF212121)),
+                .background(color = Color.White),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             item {

@@ -19,7 +19,7 @@ fun TaskDetailScreen(taskTitle: String, navController: NavController) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.White)
+            .background(Color(0xFF16172B))
     ) {
         Row(
             verticalAlignment = Alignment.CenterVertically,
@@ -36,7 +36,7 @@ fun TaskDetailScreen(taskTitle: String, navController: NavController) {
                 Icon(
                     painter = painterResource(id = R.drawable.icon_arrow_back),
                     contentDescription = "Back",
-                    tint = Color(0xFF040404),
+                    tint = Color.White,
                     modifier = Modifier.size(15.dp)
                 )
             }
@@ -44,7 +44,7 @@ fun TaskDetailScreen(taskTitle: String, navController: NavController) {
                 text = taskTitle,
                 fontSize = 24.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color(0xFF040404)
+                color = Color.White
             )
         }
 

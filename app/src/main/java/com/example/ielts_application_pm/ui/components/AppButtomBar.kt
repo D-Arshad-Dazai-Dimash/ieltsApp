@@ -1,6 +1,7 @@
 package com.example.ielts_application_pm.ui.components
 
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -9,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.painterResource
@@ -26,7 +28,7 @@ fun AppBottomNavigation(navController: NavHostController) {
         BottomNavItem("Speaking", "speaking", painterResource(R.drawable.user_speak_svgrepo_com))
     )
 
-    NavigationBar( containerColor = Color(0xFFF1E3E4)) {
+    NavigationBar(containerColor = Color(0xFFF1E3E4)) {
         val navBackStackEntry by navController.currentBackStackEntryAsState()
         val currentRoute = navBackStackEntry?.destination?.route
 
@@ -59,7 +61,8 @@ fun AppBottomNavigation(navController: NavHostController) {
                             restoreState = false
                         }
                     }
-                }
+                },
+                modifier = Modifier.clip(RoundedCornerShape(8.dp))
             )
         }
     }

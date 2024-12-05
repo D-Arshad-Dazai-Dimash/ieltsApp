@@ -53,6 +53,7 @@ fun LanguageApp() {
                 coroutineScope.launch {
                     drawerState.close()
                 }
+                navController.navigate(route)
             }
         }
     ) {

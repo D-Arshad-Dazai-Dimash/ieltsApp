@@ -161,7 +161,8 @@ fun ReadingScreen(navController: NavController, stories: List<Story>) {
                 )
                 Text(
                     text = "You got $correctCount out of ${currentStory.questions.size} questions correct.",
-                    fontSize = 18.sp
+                    fontSize = 18.sp,
+                    color = Color.White
                 )
                 Spacer(modifier = Modifier.height(16.dp))
                 if (currentStoryIndex < stories.size - 1) {

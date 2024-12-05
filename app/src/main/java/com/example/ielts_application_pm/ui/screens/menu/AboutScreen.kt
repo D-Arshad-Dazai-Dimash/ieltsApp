@@ -1,4 +1,4 @@
-package com.example.ielts_application_pm.ui.screens
+package com.example.ielts_application_pm.ui.screens.menu
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -22,7 +22,7 @@ import androidx.navigation.NavHostController
 import com.example.ielts_application_pm.R
 
 @Composable
-fun ProfileScreen(navController: NavHostController) {
+fun AboutPage(navController: NavHostController) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -50,7 +50,7 @@ fun ProfileScreen(navController: NavHostController) {
                 )
             }
             Text(
-                text = "My Profile",
+                text = "About",
                 fontSize = 24.sp,
                 color = Color.Black,
                 fontWeight = W700

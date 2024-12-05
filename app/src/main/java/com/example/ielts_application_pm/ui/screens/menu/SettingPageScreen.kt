@@ -1,4 +1,5 @@
-package com.example.ielts_application_pm.ui.screens
+package com.example.ielts_application_pm.ui.screens.menu
+
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -22,7 +23,7 @@ import androidx.navigation.NavHostController
 import com.example.ielts_application_pm.R
 
 @Composable
-fun SupportPage(navController: NavHostController) {
+fun SettingPageScreen(navController: NavHostController){
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -50,7 +51,7 @@ fun SupportPage(navController: NavHostController) {
                 )
             }
             Text(
-                text = "Support",
+                text = "Setting",
                 fontSize = 24.sp,
                 color = Color.Black,
                 fontWeight = W700

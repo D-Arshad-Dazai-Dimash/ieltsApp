@@ -1,4 +1,4 @@
-package com.example.ielts_application_pm.ui.screens
+package com.example.ielts_application_pm.ui.screens.menu
 
 
 import androidx.compose.foundation.background
@@ -23,7 +23,7 @@ import androidx.navigation.NavHostController
 import com.example.ielts_application_pm.R
 
 @Composable
-fun NotificationsScreen(navController: NavHostController){
+fun ProgressPageScreen(navController: NavHostController){
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -51,7 +51,7 @@ fun NotificationsScreen(navController: NavHostController){
                 )
             }
             Text(
-                text = "Notification",
+                text = "Progress",
                 fontSize = 24.sp,
                 color = Color.Black,
                 fontWeight = W700

@@ -1,5 +1,4 @@
-package com.example.ielts_application_pm.ui.screens
-
+package com.example.ielts_application_pm.ui.screens.menu
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -23,7 +22,7 @@ import androidx.navigation.NavHostController
 import com.example.ielts_application_pm.R
 
 @Composable
-fun ScoreboardScreen(navController: NavHostController){
+fun SupportPage(navController: NavHostController) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -51,7 +50,7 @@ fun ScoreboardScreen(navController: NavHostController){
                 )
             }
             Text(
-                text = "Scoreboard",
+                text = "Support",
                 fontSize = 24.sp,
                 color = Color.Black,
                 fontWeight = W700

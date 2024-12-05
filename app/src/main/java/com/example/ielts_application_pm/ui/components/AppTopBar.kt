@@ -30,22 +30,22 @@ fun AppTopBar(onMenuClicked: () -> Unit) {
                 modifier = Modifier.fillMaxWidth(),
                 fontWeight = FontWeight.Bold,
                 textAlign = TextAlign.Center,
-                color = Color(0xFF1C1D21),
+                color = Color.White,
                 fontFamily = FontFamily.Monospace,
                 fontSize = 30.sp
             )
         },
         navigationIcon = {
             IconButton(onClick = { onMenuClicked() }) {
-                Icon(Icons.Default.Menu, contentDescription = "Menu", tint = Color(0xFF1C1D21))
+                Icon(Icons.Default.Menu, contentDescription = "Menu", tint = Color.White)
             }
         },
         colors = TopAppBarColors(
-            containerColor = Color(0xFFF1E3E4),
-            titleContentColor = Color(0xFFF1E3E4),
-            navigationIconContentColor = Color(0xFFF1E3E4),
-            scrolledContainerColor = Color(0xFFF1E3E4),
-            actionIconContentColor = Color(0xFFF1E3E4)
+            containerColor = Color(0xFF16172B),
+            titleContentColor = Color(0xFF16172B),
+            navigationIconContentColor = Color(0xFF16172B),
+            scrolledContainerColor = Color(0xFF16172B),
+            actionIconContentColor = Color(0xFF16172B)
         ),
         modifier = Modifier.clip(RoundedCornerShape(8.dp))
     )

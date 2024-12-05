@@ -6,15 +6,11 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.input.pointer.motionEventSpy
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.example.ielts_application_pm.ui.screens.components.TaskCard
 
@@ -23,56 +19,56 @@ fun TaskListScreen(title: String, navController: NavHostController, modifier: Mo
     val tasks = when (title) {
         "Listening" -> listOf(
             "Listen, Scroll, Answer" to "Listen the phrase and write sown the phrase",
-            "The Game" to "Description of Listening game",
-            "The Game" to "Description of Listening game",
-            "The Game" to "Description of Listening game",
-            "The Game" to "Description of Listening game",
-            "The Game" to "Description of Listening game",
-            "The Game" to "Description of Listening game",
-            "The Game" to "Description of Listening game",
-            "The Game" to "Description of Listening game",
-            "The Game" to "Description of Listening game",
-            "The Game" to "Description of Listening game",
-            "The Game" to "Description of Listening game",
-            "The Game" to "Description of Listening game",
-            "The Game" to "Description of Listening game",
-            "The Game" to "Description of Listening game",
+            "Game 1 " to "Description of Listening game",
+            "Game 2" to "Description of Listening game",
+//            "The Game" to "Description of Listening game",
+//            "The Game" to "Description of Listening game",
+//            "The Game" to "Description of Listening game",
+//            "The Game" to "Description of Listening game",
+//            "The Game" to "Description of Listening game",
+//            "The Game" to "Description of Listening game",
+//            "The Game" to "Description of Listening game",
+//            "The Game" to "Description of Listening game",
+//            "The Game" to "Description of Listening game",
+//            "The Game" to "Description of Listening game",
+//            "The Game" to "Description of Listening game",
+//            "The Game" to "Description of Listening game",
         )
 
         "Writing" -> listOf(
             "Grammar" to "Put words in the correct order",
-            "GAME" to "Description of Writing game",
-            "GAME" to "Description of Writing game",
-            "GAME" to "Description of Writing game",
-            "GAME" to "Description of Writing game",
-            "GAME" to "Description of Writing game",
-            "GAME" to "Description of Writing game",
-            "GAME" to "Description of Writing game",
-            "GAME" to "Description of Writing game",
-            "GAME" to "Description of Writing game",
-            "GAME" to "Description of Writing game",
-            "GAME" to "Description of Writing game",
-            "GAME" to "Description of Writing game",
-            "GAME" to "Description of Writing game",
-            "GAME" to "Description of Writing game",
-            "GAME" to "Description of Writing game",
+            "GAME 1" to "Description of Writing game",
+            "GAME 2" to "Description of Writing game",
+//            "GAME" to "Description of Writing game",
+//            "GAME" to "Description of Writing game",
+//            "GAME" to "Description of Writing game",
+//            "GAME" to "Description of Writing game",
+//            "GAME" to "Description of Writing game",
+//            "GAME" to "Description of Writing game",
+//            "GAME" to "Description of Writing game",
+//            "GAME" to "Description of Writing game",
+//            "GAME" to "Description of Writing game",
+//            "GAME" to "Description of Writing game",
+//            "GAME" to "Description of Writing game",
+//            "GAME" to "Description of Writing game",
+//            "GAME" to "Description of Writing game",
         )
 
         "Reading" -> listOf(
             "The cat tells a story" to "You can pet the cat and cat tells a story for you",
             "GAME" to "Description of Reading game",
-            "GAME" to "Description of Reading game",
-            "GAME" to "Description of Reading game",
-            "GAME" to "Description of Reading game",
-            "GAME" to "Description of Reading game",
-            "GAME" to "Description of Reading game",
-            "GAME" to "Description of Reading game",
-            "GAME" to "Description of Reading game",
-            "GAME" to "Description of Reading game",
-            "GAME" to "Description of Reading game",
-            "GAME" to "Description of Reading game",
-            "GAME" to "Description of Reading game",
-            "GAME" to "Description of Reading game",
+//            "GAME" to "Description of Reading game",
+//            "GAME" to "Description of Reading game",
+//            "GAME" to "Description of Reading game",
+//            "GAME" to "Description of Reading game",
+//            "GAME" to "Description of Reading game",
+//            "GAME" to "Description of Reading game",
+//            "GAME" to "Description of Reading game",
+//            "GAME" to "Description of Reading game",
+//            "GAME" to "Description of Reading game",
+//            "GAME" to "Description of Reading game",
+//            "GAME" to "Description of Reading game",
+//            "GAME" to "Description of Reading game",
 
 
             )
@@ -80,20 +76,20 @@ fun TaskListScreen(title: String, navController: NavHostController, modifier: Mo
         "Speaking" -> listOf(
             "The Game" to "Description of Speaking game",
             "The Game" to "Description of Speaking game",
-            "The Game" to "Description of Speaking game",
-            "The Game" to "Description of Speaking game",
-            "The Game" to "Description of Speaking game",
-            "The Game" to "Description of Speaking game",
-            "The Game" to "Description of Speaking game",
-            "The Game" to "Description of Speaking game",
-            "The Game" to "Description of Speaking game",
-            "The Game" to "Description of Speaking game",
-            "The Game" to "Description of Speaking game",
-            "The Game" to "Description of Speaking game",
-            "The Game" to "Description of Speaking game",
-            "The Game" to "Description of Speaking game",
-            "The Game" to "Description of Speaking game",
-            "The Game" to "Description of Speaking game",
+//            "The Game" to "Description of Speaking game",
+//            "The Game" to "Description of Speaking game",
+//            "The Game" to "Description of Speaking game",
+//            "The Game" to "Description of Speaking game",
+//            "The Game" to "Description of Speaking game",
+//            "The Game" to "Description of Speaking game",
+//            "The Game" to "Description of Speaking game",
+//            "The Game" to "Description of Speaking game",
+//            "The Game" to "Description of Speaking game",
+//            "The Game" to "Description of Speaking game",
+//            "The Game" to "Description of Speaking game",
+//            "The Game" to "Description of Speaking game",
+//            "The Game" to "Description of Speaking game",
+//            "The Game" to "Description of Speaking game",
         )
 
         else -> emptyList()
@@ -102,13 +98,13 @@ fun TaskListScreen(title: String, navController: NavHostController, modifier: Mo
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(color = Color.White)
+            .background(color = Color(0xFF16172B))
     ) {
         LazyColumn(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(top = 56.dp)
-                .background(color = Color.White),
+                .background(color = Color(0xFF16172B)),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             item {
@@ -127,7 +123,15 @@ fun TaskListScreen(title: String, navController: NavHostController, modifier: Mo
                 TaskCard(
                     title = taskTitle,
                     description = taskDescription,
-                    onClick = { navController.navigate("taskDetail/$taskTitle") }
+                    onClick = {
+                        if (taskTitle.equals("Listen, Scroll, Answer")) {
+                            navController.navigate("Listen, Scroll, Answer")
+                        } else if (taskTitle.equals("Grammar")) {
+                            navController.navigate("grammar")
+                        } else {
+                            navController.navigate("taskDetail/$taskTitle")
+                        }
+                    }
                 )
             }
         }

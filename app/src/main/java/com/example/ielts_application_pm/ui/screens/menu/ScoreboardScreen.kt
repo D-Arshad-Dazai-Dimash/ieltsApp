@@ -1,4 +1,4 @@
-package com.example.ielts_application_pm.ui.screens
+package com.example.ielts_application_pm.ui.screens.menu
 
 
 import androidx.compose.foundation.background
@@ -23,7 +23,7 @@ import androidx.navigation.NavHostController
 import com.example.ielts_application_pm.R
 
 @Composable
-fun SettingPageScreen(navController: NavHostController){
+fun ScoreboardScreen(navController: NavHostController){
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -51,7 +51,7 @@ fun SettingPageScreen(navController: NavHostController){
                 )
             }
             Text(
-                text = "Setting",
+                text = "Scoreboard",
                 fontSize = 24.sp,
                 color = Color.Black,
                 fontWeight = W700

@@ -26,7 +26,7 @@ fun AnswerInput(onSubmit: (String) -> Unit) {
         Button(
             onClick = {
                 onSubmit(answer)
-                answer = "" // Очистить поле после отправки
+                answer = ""
             },
             modifier = Modifier.padding(top = 8.dp)
         ) {

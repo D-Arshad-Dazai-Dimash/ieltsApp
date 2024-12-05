@@ -57,7 +57,7 @@ fun TaskListScreen(title: String, navController: NavHostController, modifier: Mo
         "Reading" -> listOf(
             "The cat tells a story" to "You can pet the cat and cat tells a story for you",
             "GAME" to "Description of Reading game",
-//            "GAME" to "Description of Reading game",
+            "Read and Answer" to "Read the story and answer to the questions",
 //            "GAME" to "Description of Reading game",
 //            "GAME" to "Description of Reading game",
 //            "GAME" to "Description of Reading game",
@@ -128,6 +128,8 @@ fun TaskListScreen(title: String, navController: NavHostController, modifier: Mo
                             navController.navigate("Listen, Scroll, Answer")
                         } else if (taskTitle.equals("Grammar")) {
                             navController.navigate("grammar")
+                        }else if(taskTitle.equals("Read and Answer")) {
+                            navController.navigate("read and answer")
                         } else {
                             navController.navigate("taskDetail/$taskTitle")
                         }

@@ -14,6 +14,7 @@ import com.example.ielts_application_pm.ui.screens.menu.ScoreboardScreen
 import com.example.ielts_application_pm.ui.screens.menu.SettingPageScreen
 import com.example.ielts_application_pm.ui.screens.menu.SupportPage
 import com.example.ielts_application_pm.ui.screens.TaskListScreen
+import com.example.ielts_application_pm.ui.screens.games.reading.MainReadingScreen
 import com.example.ielts_application_pm.ui.screens.games.writing.SentenceGame
 import com.example.ielts_application_pm.ui.screens.menu.VocabularyPageScreen
 import com.example.tt.GameScreen
@@ -47,6 +48,9 @@ fun NavigationGraph(navController: NavHostController, modifier: Modifier = Modif
         }
         composable("grammar") {
             SentenceGame(navController)
+        }
+        composable("read and answer") {
+            MainReadingScreen(navController)
         }
     }
 }

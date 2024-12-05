@@ -80,17 +80,18 @@ fun GameScreen(navController: NavController, viewModel: GameViewModel = viewMode
                 } else {
                     Text(
                         text = "Ваш ответ: $userAnswer",
-                        color = Color.Black
+                        color = Color.White
                     )
                     Spacer(modifier = Modifier.height(8.dp))
                     Text(
                         text = "Правильный ответ: $correctAnswer",
-                        color = Color.Black
+                        color = Color.White
                     )
                     Spacer(modifier = Modifier.height(16.dp))
 
                     Button(onClick = { viewModel.nextVideo() }) {
-                        Text("Следующее видео")
+                        Text("Следующее видео" ,
+                            color = Color.White)
                     }
                 }
             }

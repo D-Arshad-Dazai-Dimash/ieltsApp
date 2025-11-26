@@ -32,7 +32,7 @@ IELTS App — это мобильное приложение на Android, це�
 1. Клонируйте репозиторий:  
    ```bash
    git clone https://github.com/D-Arshad-Dazai-Dimash/ieltsApp.git
-````
+
 
 2. Откройте проект в Android Studio
 3. Дайте Android Studio синхронизировать Gradle
